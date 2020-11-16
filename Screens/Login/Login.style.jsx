@@ -3,7 +3,7 @@ const { StyleSheet, Dimensions } = require("react-native");
 const height = Dimensions.get("screen").height - 80;
 
 const Styles = StyleSheet.create({
-  container: { padding: 40 },
+  container: { padding: 40, backgroundColor: "#fff" },
   logo: {
     height: (height / 10) * 2,
     backgroundColor: "yellow",

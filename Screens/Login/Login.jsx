@@ -20,7 +20,12 @@ function Login(props) {
           <Text>Password</Text>
           <TextInput placeholder="Password" />
         </View>
-        <Button title="Sign In" />
+        <Button
+          title="Sign In"
+          onPress={() => {
+            console.log(props.navigation.navigate("Home"));
+          }}
+        />
         <Text>or use one of your social profiles</Text>
       </View>
       <View style={Styles.socialLogin}>
