@@ -49,7 +49,7 @@ function CustomPieChart(props) {
       >
         <ForeignObject x={-45} y={-45}>
           <View style={styles.progressCircleContentContainer}>
-            <Text style={styles.text}>{props.value}%</Text>
+            <Text style={styles.text}>{parseInt(props.value)}%</Text>
           </View>
         </ForeignObject>
       </ProgressCircle>

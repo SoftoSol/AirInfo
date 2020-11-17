@@ -13,8 +13,8 @@ function Room(props) {
       <View style={{ marginTop: 30 }}>
         <View>
           <View style={{ flexDirection: "row" }}>
-            <PieChart color="green" value={64} title="O2" />
-            <PieChart color="red" value={40} title="CO2" />
+            <PieChart color="green" value={Math.random() * 100} title="O2" />
+            <PieChart color="red" value={Math.random() * 100} title="CO2" />
           </View>
           <View
             style={{
@@ -22,10 +22,10 @@ function Room(props) {
               alignItems: "flex-end",
             }}
           >
-            <PieChart color="blue" value={40} title="Dust" />
-            <PieChart color="green" value={0} title="Gas Presence (MQ2)" />
+            <PieChart color="blue" value={Math.random() * 100} title="Dust" />
+            <PieChart color="#fcba03" value={Math.random() * 100} title="Gas Presence (MQ2)" />
           </View>
-          <PieChart color="purple" value={90} title="Air Condition" />
+          <PieChart color="purple" value={Math.random() * 100} title="Air Condition" />
         </View>
       </View>
     </View>

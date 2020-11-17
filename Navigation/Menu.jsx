@@ -11,7 +11,7 @@ function Menu(props) {
     <View style={{ height: height }}>
       <View>
         <View>
-          <ClosePanel />
+          <ClosePanel {...props}/>
         </View>
         <View
           style={{
