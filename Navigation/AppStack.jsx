@@ -49,7 +49,7 @@ let AppStack = () => (
           fontWeight: "normal",
         },
       }}
-      initialRouteName="Home"
+      initialRouteName="Login"
       screenOptions={{
         headerShown: false,
       }}

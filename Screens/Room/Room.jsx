@@ -3,9 +3,10 @@ import { Text, View } from "react-native";
 import Back from "../../Components/Back/Back.Component";
 import PieChart from "../../Components/PieChartComponent/PieChart.Component";
 
+import Constants from "expo-constants";
 function Room(props) {
   return (
-    <View style={{ padding: 20, backgroundColor: "#fff", height: "100%" }}>
+    <View style={{ padding: 20,paddingTop:Constants.statusBarHeight, backgroundColor: "#fff", height: "100%" }}>
       <Back {...props} />
       <Text style={{ fontWeight: "bold", fontSize: 24, marginBottom: 40 }}>
         Living Room

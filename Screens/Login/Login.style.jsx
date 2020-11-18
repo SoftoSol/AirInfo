@@ -1,9 +1,11 @@
 const { StyleSheet, Dimensions } = require("react-native");
 
+import Constants from "expo-constants";
+
 const height = Dimensions.get("screen").height - 80;
 const pink = "#F95F6B";
 const Styles = StyleSheet.create({
-  container: { padding: 40, backgroundColor: "#fff" },
+  container: { padding: 40,paddingTop:Constants.statusBarHeight, backgroundColor: "#fff" },
   logo: {
     height: (height / 10) * 2,
   },
